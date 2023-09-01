@@ -87,7 +87,6 @@ fn c3_HSLtoRGB(hsl : vec3<f32>) -> vec3<f32>
 @fragment
 fn main(input : FragmentInput) -> FragmentOutput
 {
-	
 	var radAngle : f32 = radians(uAngle);
 	var texelSize : vec2<f32> = c3_getPixelSize(textureFront);
 	var actualWidth: f32 = shaderParams.uDistance * texelSize;
